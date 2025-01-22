@@ -1,0 +1,32 @@
+<html>
+
+<head><link rel="stylesheet" href="{{url_for('static',filename='css/scheme.css')}}"></head>
+<body style="background-color:#F4C2C2;">
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+    
+    {%if data == 0%}
+    <h1>fraud transaction</h1>  
+       
+    {%elif data== 1%}
+    <h1>Non-fraud -Transaction</h1>
+
+    
+    {%endif%}
+
+
+
+ <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
